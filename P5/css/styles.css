@@ -1,0 +1,154 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.success {
+    border-color: green;
+}
+
+.fail {
+    border-color: red;
+}
+
+main img {
+    max-width: 300px;
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+
+#displayProduct a {
+    text-decoration: none;
+}
+
+#displayProduct {
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    grid-gap: 50px;
+}
+
+main a {
+    color: #343a40;
+}
+
+main li, #product {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+main button {
+    margin-top: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.recapitulatif .fas:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.recapitulatif {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#panier-recap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-content: center;
+    vertical-align: middle;
+    border: 2px solid #343a40;
+    background-color: #e9ecef;
+    width: 80%;
+}
+
+#table {
+    width: 100%;
+}
+
+#colonneTotal, #sommeTotal, #colonneConfirmTotal, #sommeConfirmTotal {
+    border: 2px solid black;
+    background-color: #e9ecef;
+    font-size: 2rem;
+}
+
+.photo_article {
+    width: auto;
+    height: auto;
+}
+
+th, td {
+    font-size: 1.4rem;
+}
+
+@media all and (max-width:450px) {
+    main img {
+        width: 200px;
+        height: auto;
+    }
+
+    #displayProduct {
+        grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+        grid-gap: 50px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    #panier-recap, #confirmation-recap, .cadre {
+        width: 97%;
+
+    }
+
+    th {
+        display: none;
+    }
+
+    #colonneTotal, #colonneConfirmTotal {
+        display: block;
+    }
+
+    #colonneTotal, #sommeTotal, #colonneConfirmTotal, #sommeConfirmTotal {
+        font-size: 1.4rem;
+        border: 0;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid;
+    }
+
+    .button {
+        flex-direction: column;
+        align-items: center;
+    }
+}

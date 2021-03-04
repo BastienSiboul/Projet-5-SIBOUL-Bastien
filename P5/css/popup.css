@@ -1,0 +1,78 @@
+.confirmation-popup.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 90;
+}
+
+.confirmation-popup.content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background-color: beige;
+    box-shadow: black;
+    z-index: 91;
+    padding: 10px 10px;
+}
+
+.confirmation-popup.content>button.shut {
+    width: 30px;
+    height: 30px;
+    color: cornsilk;
+    font-size: 20px;
+    float: right;
+    cursor: pointer;
+}
+
+.confirmation-popup.content>div.added-alert>p {
+    font-size: 24px;
+    color: brown;
+    display: flex;
+    margin: 90px 20px 20px 20px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+div.choice {
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div.choice>.shop {
+    color: brown;
+    background-color: goldenrod;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+div.choice>.go-to-cart {
+    color: goldenrod;
+    background-color: brown;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+div.choice>.shop:hover {
+    background-color: cornflowerblue;
+    border: solid 2px cornflowerblue;
+    color: white;
+    text-transform: uppercase;
+}
+
+div.choice>.go-to-cart:hover {
+    background-color: cornflowerblue;
+    border: solid 2px cornflowerblue;
+    color: white;
+    text-transform: uppercase;
+}
